@@ -3,15 +3,15 @@
 	"id": "more-hoppers",
 	"version": "${version}",
 	"name": "More Hoppers",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This mod adds more hoppers to Minecraft, including slower ones that are easier to craft, and faster ones that require much more resources!",
 	"authors": [
-		"Me!"
+		"JJVCOB"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/JJVCOB",
+		"sources": "https://github.com/JJVCOB/MoreHoppers"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/more-hoppers/icon.png",
 	"environment": "*",
 	"entrypoints": {
