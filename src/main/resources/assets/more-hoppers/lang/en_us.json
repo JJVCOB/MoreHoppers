@@ -1,0 +1,25 @@
+{
+  "container.netherite_hopper": "Netherite Item Hopper",
+  "block.more-hoppers.netherite_hopper": "Netherite Hopper",
+
+  "container.diamond_hopper": "Diamond Item Hopper",
+  "block.more-hoppers.diamond_hopper": "Diamond Hopper",
+
+  "container.emerald_hopper": "Emerald Item Hopper",
+  "block.more-hoppers.emerald_hopper": "Emerald Hopper",
+
+  "container.golden_hopper": "Golden Item Hopper",
+  "block.more-hoppers.golden_hopper": "Golden Hopper",
+
+  "container.copper_hopper": "Copper Item Hopper",
+  "block.more-hoppers.copper_hopper": "Copper Hopper",
+
+  "container.brick_hopper": "Brick Item Hopper",
+  "block.more-hoppers.brick_hopper": "Brick Hopper",
+
+  "container.stone_hopper": "Stone Item Hopper",
+  "block.more-hoppers.stone_hopper": "Stone Hopper",
+
+  "container.wooden_hopper": "Wooden Item Hopper",
+  "block.more-hoppers.wooden_hopper": "Wooden Hopper"
+}

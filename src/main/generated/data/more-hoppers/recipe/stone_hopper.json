@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "multi_bench",
+  "key": {
+    "g": "#minecraft:stone_crafting_materials",
+    "h": "minecraft:chest"
+  },
+  "pattern": [
+    "g g",
+    "ghg",
+    " g "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more-hoppers:stone_hopper"
+  }
+}
