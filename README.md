@@ -5,7 +5,7 @@ More Hoppers is a very lightweight mod for Minecraft that adds more types of hop
 <img width="1586" height="699" alt="2026-02-05_20 29 40" src="https://github.com/user-attachments/assets/9c0d5689-dcfb-4e46-ac1c-59d8f857493a" />
 <img width="486" height="54" alt="2026-02-05_20 30 08" src="https://github.com/user-attachments/assets/498255c6-abfb-4dd5-96b6-d46241fb3b93" />
 
-This mod is my first ever attempt at a minecraft mod, so there's no guarantee I'll ever upkeep it. This was just done as a fun project.
+This mod is my first ever attempt at a minecraft mod coded in Java, so there's no guarantee I'll ever upkeep it. This was just done as a fun project.
 
 ## Hopper Types
 
