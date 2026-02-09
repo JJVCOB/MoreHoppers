@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dirt_hopper": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more-hoppers:dirt_hopper"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more-hoppers:dirt_hopper"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dirt_hopper"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more-hoppers:dirt_hopper"
+    ]
+  }
+}

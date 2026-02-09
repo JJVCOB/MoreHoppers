@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    "more-hoppers:netherite_hopper",
+    "minecraft:nether_star"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more-hoppers:end_hopper"
+  }
+}

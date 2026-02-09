@@ -13,19 +13,18 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
-
-import net.jjvcob.morehoppers.hoppers.NetheriteHopperBlock;
-import net.jjvcob.morehoppers.hoppers.DiamondHopperBlock;
-import net.jjvcob.morehoppers.hoppers.EmeraldHopperBlock;
-import net.jjvcob.morehoppers.hoppers.GoldenHopperBlock;
-import net.jjvcob.morehoppers.hoppers.CopperHopperBlock;
-import net.jjvcob.morehoppers.hoppers.BrickHopperBlock;
-import net.jjvcob.morehoppers.hoppers.StoneHopperBlock;
-import net.jjvcob.morehoppers.hoppers.WoodenHopperBlock;
+import net.jjvcob.morehoppers.hoppers.*;
 
 import java.util.function.Function;
 
 public class ModBlocks {
+
+    public static final Block END_HOPPER = register(
+            "end_hopper",
+            EndHopperBlock::new,
+            BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).strength(3.0F).lightLevel(blockStatex -> 15).noOcclusion(),
+            true
+    );
 
     public static final Block NETHERITE_HOPPER = register(
             "netherite_hopper",
@@ -83,6 +82,13 @@ public class ModBlocks {
             true
     );
 
+    public static final Block DIRT_HOPPER = register(
+            "dirt_hopper",
+            DirtHopperBlock::new,
+            BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).strength(0.5F).sound(SoundType.GRAVEL).noOcclusion(),
+            true
+    );
+
     private static Block register(String name, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, boolean shouldRegisterItem) {
         ResourceKey<Block> blockKey = keyOfBlock(name);
         Block block = blockFactory.apply(settings.setId(blockKey));
@@ -104,6 +110,7 @@ public class ModBlocks {
 
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.REDSTONE_BLOCKS).register((itemGroup) -> {
+            itemGroup.accept(ModBlocks.DIRT_HOPPER.asItem());
             itemGroup.accept(ModBlocks.WOODEN_HOPPER.asItem());
             itemGroup.accept(ModBlocks.STONE_HOPPER.asItem());
             itemGroup.accept(ModBlocks.BRICK_HOPPER.asItem());
@@ -112,6 +119,7 @@ public class ModBlocks {
             itemGroup.accept(ModBlocks.EMERALD_HOPPER.asItem());
             itemGroup.accept(ModBlocks.DIAMOND_HOPPER.asItem());
             itemGroup.accept(ModBlocks.NETHERITE_HOPPER.asItem());
+            itemGroup.accept(ModBlocks.END_HOPPER.asItem());
         });
     }
 }

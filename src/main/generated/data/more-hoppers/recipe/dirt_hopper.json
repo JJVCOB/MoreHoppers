@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "multi_bench",
+  "key": {
+    "g": "minecraft:dirt"
+  },
+  "pattern": [
+    "g g",
+    "g g",
+    " g "
+  ],
+  "result": {
+    "count": 1,
+    "id": "more-hoppers:dirt_hopper"
+  }
+}

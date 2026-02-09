@@ -25,6 +25,14 @@ public class MoreHoppersRecipeProvider extends FabricRecipeProvider {
             @Override
             public void buildRecipes() {
                 HolderLookup.RegistryLookup<Item> itemLookup = registries.lookupOrThrow(Registries.ITEM);
+                shaped(RecipeCategory.REDSTONE, ModBlocks.DIRT_HOPPER, 1)
+                        .pattern("g g")
+                        .pattern("g g")
+                        .pattern(" g ")
+                        .define('g', Items.DIRT)
+                        .group("multi_bench")
+                        .unlockedBy(getHasName(ModBlocks.DIRT_HOPPER), has(ModBlocks.DIRT_HOPPER))
+                        .save(output);
                 shaped(RecipeCategory.REDSTONE, ModBlocks.WOODEN_HOPPER, 1)
                         .pattern("g g")
                         .pattern("ghg")
@@ -89,6 +97,11 @@ public class MoreHoppersRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModBlocks.DIAMOND_HOPPER), has(ModBlocks.DIAMOND_HOPPER))
                         .save(output);
                 netheriteSmithing(ModBlocks.DIAMOND_HOPPER.asItem(), RecipeCategory.REDSTONE, ModBlocks.NETHERITE_HOPPER.asItem());
+                shapeless(RecipeCategory.REDSTONE, ModBlocks.END_HOPPER, 1)
+                        .requires(ModBlocks.NETHERITE_HOPPER)
+                        .requires(Items.NETHER_STAR)
+                        .unlockedBy(getHasName(ModBlocks.END_HOPPER), has(ModBlocks.END_HOPPER))
+                        .save(output);
             }
         };
     }

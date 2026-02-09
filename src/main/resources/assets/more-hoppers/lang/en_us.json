@@ -1,4 +1,7 @@
 {
+  "container.end_hopper": "End Item Hopper",
+  "block.more-hoppers.end_hopper": "End Hopper",
+
   "container.netherite_hopper": "Netherite Item Hopper",
   "block.more-hoppers.netherite_hopper": "Netherite Hopper",
 
@@ -21,5 +24,8 @@
   "block.more-hoppers.stone_hopper": "Stone Hopper",
 
   "container.wooden_hopper": "Wooden Item Hopper",
-  "block.more-hoppers.wooden_hopper": "Wooden Hopper"
+  "block.more-hoppers.wooden_hopper": "Wooden Hopper",
+
+  "container.dirt_hopper": "Dirt Item Hopper",
+  "block.more-hoppers.dirt_hopper": "Dirt Hopper"
 }
