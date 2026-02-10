@@ -2,14 +2,18 @@
 
 More Hoppers is a very lightweight mod for Minecraft that adds more types of hoppers, ranging from slower ones that are cheaper to craft, to much faster ones that are far more expensive to craft.
 
-<img width="1586" height="699" alt="2026-02-05_20 29 40" src="https://github.com/user-attachments/assets/9c0d5689-dcfb-4e46-ac1c-59d8f857493a" />
-<img width="486" height="54" alt="2026-02-05_20 30 08" src="https://github.com/user-attachments/assets/498255c6-abfb-4dd5-96b6-d46241fb3b93" />
+<img width="2239" height="861" alt="2026-02-09_17 38 49" src="https://github.com/user-attachments/assets/4a3babe3-35bb-4260-b676-279d4276c3a5" />
+<img width="594" height="54" alt="2026-02-09_17 41 12" src="https://github.com/user-attachments/assets/6745f14f-15a5-4290-9a35-f0245034cb88" />
 
 This mod is my first ever attempt at a minecraft mod coded in Java, so there's no guarantee I'll ever upkeep it. This was just done as a fun project.
 
 ## Hopper Types
 
 _A regular hopper transfers 1 item every 8 ticks._
+
+**Dirt Hopper:** Transfers 1 item every 24-32 ticks
+
+<img width="348" height="162" alt="2026-02-09_17 39 40" src="https://github.com/user-attachments/assets/6aa0f596-c0f7-4139-badf-e8f28e2e994a" />
 
 **Wooden Hopper:** Transfers 1 item every 16 ticks
 
@@ -44,3 +48,8 @@ _Hopper tiers above regular hoppers operate on an upgrade crafting system._
 **Netherite Hopper:** Transfers 1 item every tick
 
 <img width="324" height="54" alt="2026-02-05_20 32 43" src="https://github.com/user-attachments/assets/3e7b3ad8-b2cb-4147-a76e-4d9b35c11c84" />
+
+**End Hopper:** Transfers 4 items every tick
+
+<img width="348" height="162" alt="2026-02-09_17 39 27" src="https://github.com/user-attachments/assets/164bb7ce-eb5f-47e5-94d0-0b3fc0a72854" />
+
