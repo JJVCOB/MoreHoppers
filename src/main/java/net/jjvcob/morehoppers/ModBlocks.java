@@ -1,6 +1,6 @@
 package net.jjvcob.morehoppers;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -109,7 +109,7 @@ public class ModBlocks {
     }
 
     public static void initialize() {
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.REDSTONE_BLOCKS).register((itemGroup) -> {
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.REDSTONE_BLOCKS).register((itemGroup) -> {
             itemGroup.accept(ModBlocks.DIRT_HOPPER.asItem());
             itemGroup.accept(ModBlocks.WOODEN_HOPPER.asItem());
             itemGroup.accept(ModBlocks.STONE_HOPPER.asItem());

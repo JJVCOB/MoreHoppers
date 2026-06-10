@@ -395,7 +395,7 @@ public class GoldenHopperBlockEntity extends RandomizableContainerBlockEntity im
     @Nullable
     private static Container getEntityContainer(Level level, double d, double e, double f) {
         List<Entity> list = level.getEntities((Entity)null, new AABB(d - 0.5, e - 0.5, f - 0.5, d + 0.5, e + 0.5, f + 0.5), EntitySelector.CONTAINER_ENTITY_SELECTOR);
-        return !list.isEmpty() ? (Container)list.get(level.random.nextInt(list.size())) : null;
+        return !list.isEmpty() ? (Container)list.get(level.getRandom().nextInt(list.size())) : null;
     }
 
     private static boolean canMergeItems(ItemStack itemStack, ItemStack itemStack2) {
